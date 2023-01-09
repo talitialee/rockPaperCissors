@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rock Paper Cissors</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="icon" type="image/x-icon" href="resources/pierre3.png">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="score"> 
+          <h1>-Computer : <span id="score-ordinateur">0</span></h1>
+          <h1>-You : <span id="score-joueur">0</span></h1>       
+        
+
+            <div id="reset"><h3>► Start over</h3></div>
+                
+            <div class="container-audio">
+                    <audio id="myAudio" controls loop autoplay>
+                        <source src="resources/rain.mp3" type="audio/mp3">
+                        Your browser dose not Support the audio Tag
+                    </audio>
+                    <div class="toggle">
+                        <div id="on" onclick="playAudio()">♫</div>
+                        <div id="off" onclick="pauseAudio()">■</div>
+                    </div> 
+                    <div class="container-audio">
+                        <div class="colum1">
+                        <div class="row"></div>
+                        </div>
+                        <div class="colum1">
+                        <div class="row"></div>
+                        </div>
+                        <div class="colum1">
+                        <div class="row"></div>
+                        </div> 
+           
+                    </div>
+       
+       
+            </div>
+        </div> 
+
+        <div class="action">
+            <p id="message">Let's go!</p>
+                    
+            
+        </div>
+         
+       <!-- Computer Weapons -->
+       <div class="ecranordinateur">
+       <div class="choix choix-ordi">  
+            <div class="btn-ordi" id="opierre">
+                <img src="resources/pierre3.png">
+            </div>
+            <div class="btn-ordi" id="ofeuille">
+               <img src="resources/feuille3.png">
+            </div>
+            <div class="btn-ordi" id="ociseaux">
+                <img src="resources/ciseaux3.png">
+            </div>
+        </div>  
+        </div>
+        <div id="next">Next round</div>
+        
+        <!-- Your Weapons -->
+        <div class="choix choix-joueur">
+            <h1 id="chooseYourWeapon">Choose your weapon!</h1>
+            <div class="weapon-container">
+                <div class="weapon btn-joueur" id="pierre">
+                    <img src="resources/pierre3.png"><p>Rock</p>
+                </div>
+                <div class="weapon btn-joueur" id="feuille">
+                   <img src="resources/feuille3.png"><p>Paper</p>
+                </div>
+                <div class="weapon btn-joueur" id="ciseaux">
+                    <img src="resources/ciseaux3.png"><p>Cissors</p>
+                </div>
+            </div>
+            
+        </div>
+
+       
+        
+        <footer>
+          <h3><a href="https://alice-reuter.myportfolio.com/" alt="Portfolio - Alice Reuter" target="_blank">Hi there</a></h3>
+        </footer>
+        
+      </div>
+      
+      
+      <script src="./app.js"></script>
+</body>
+</html>
